@@ -5,9 +5,27 @@
     font-family: sans-serif;
 }
 
-main{
+.container{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+}
+
+.tk-body {
+    margin-top: 5rem;
+    width: 1000px;
+}
+
+.detailes {
+    display: flex;
+    width: 50%;
+}
+
+.tk-name {
+    width: 50%;
+}
+
+.tk-price {
+    width: 50%;
 }

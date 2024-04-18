@@ -8,15 +8,36 @@
 </head>
 <body>
     <main>
-        <form action="">
-            <h1 id="biglietto">Calcola il prezzo del tuo biglietto</h1>
-            <label for=".age">ETA'</label>
-            <input class="age" name="age" type="number" placeholder="scrivi qui.." >
-            <label for=".km">Km da percorrere</label>
-            <input class="km" name="age" type="number" placeholder="scrivi qui.." >
-            <button class="btn" name="send" type="button">INVIA</button>
-        </form>
-        <h1 id="tiket"></h1>
+        <div class="container">
+            <form action="">
+                <h1 id="biglietto">Calcola il prezzo del tuo biglietto</h1>
+                <label for=".age">ETA'</label>
+                <input class="age" name="age" type="number" placeholder="scrivi qui.." >
+                <label for=".km">Km da percorrere</label>
+                <input class="km" name="age" type="number" placeholder="scrivi qui.." >
+                <label for=".name">Nome e Cognome</label>
+                <input class="names" type="text" name="name" placeholder="scrivi qui.." >
+                <button class="btn" name="send" type="button">INVIA</button>
+            </form>
+    
+            
+            <div class="tk-body">
+                <div class="up-tk">
+                    <h1>Dettagli Biglietto</h1>
+                </div>
+                <div class="detailes">
+                    <div class="tk-name">
+                        <h3 id="tkname">NOME:</h3>
+                        <h3 id="tkage">ETA':</h3>
+                    </div>
+                    <div class="tk-price">
+                        <h3 id="tiket">PREZZO:</h3>
+                    </div>
+
+                </div>
+                
+            </div>
+        </div>
     </main> 
     <script src="./js/main.js"></script>
 </body>

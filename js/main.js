@@ -1,6 +1,8 @@
-const age = document.querySelector('.age').value;
+const age = document.querySelector('.age');
 
-const kilomiters = document.querySelector('.km').value;
+const kilomiters = document.querySelector('.km');
+
+const names = document.querySelector('.names');
 
 const base = 0.21
 
@@ -15,10 +17,13 @@ if (age < 18){
 const btn = document.querySelector('.btn')
 
 btn.addEventListener('click', function() {
-    console.log(age);
-    console.log(kilomiters);
-    console.log(`Il prezzo è: ${prezzo.toFixed(2)}€`)
-    document.getElementById("tiket").innerHTML = (`Il prezzo è: ${prezzo.toFixed(2)}€`)
+    console.log(age.value);
+    console.log(kilomiters.value);
+    console.log(`Il prezzo è: ${prezzo.toFixed(2)}€`);
+    kilomiters.value
+    document.getElementById("tkname").innerHTML += names.value;
+    document.getElementById("tkage").innerHTML += age.value;
+    document.getElementById("tiket").innerHTML += (`${prezzo.toFixed(2)}`);
 })
 
 
