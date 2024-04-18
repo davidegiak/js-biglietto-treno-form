@@ -6,14 +6,6 @@ const names = document.querySelector('.names');
 
 const base = 0.21
 
-let prezzo = (kilomiters * base)
-
-if (age < 18){
-    prezzo = prezzo - (prezzo * 0.2)
-} else if (age > 65){
-    prezzo = prezzo - (prezzo * 0.4)
-}
-
 const btn = document.querySelector('.btn')
 
 btn.addEventListener('click', function() {
@@ -25,6 +17,14 @@ btn.addEventListener('click', function() {
     document.getElementById("tkage").innerHTML += age.value;
     document.getElementById("tiket").innerHTML += (`${prezzo.toFixed(2)}`);
 })
+
+let prezzo = (kilomiters.value * base)
+
+if (age < 18){
+    prezzo = prezzo - (prezzo * 0.2)
+} else if (age > 65){
+    prezzo = prezzo - (prezzo * 0.4)
+}
 
 
 
